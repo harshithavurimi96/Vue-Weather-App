@@ -31,7 +31,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// ✅ Replace this with your real OpenWeatherMap API key
+
 const API_KEY = '1e6e5c18e52b21999d589b810b4342de'
 
 const city = ref('')
@@ -59,7 +59,7 @@ async function getWeather() {
   }
 }
 
-// 🌈 Dynamic background logic
+
 const backgroundClass = computed(() => {
   if (!weather.value) return 'default-bg'
   const condition = weather.value.weather[0].main.toLowerCase()
@@ -72,5 +72,5 @@ const backgroundClass = computed(() => {
 </script>
 
 <style scoped>
-/* Scoped styles can be added here */
+
 </style>
